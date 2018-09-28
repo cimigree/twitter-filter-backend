@@ -1,0 +1,31 @@
+---
+services:
+
+##NEWLINE##
+  web:
+    git_url: http://github.com/cimigree/MicroTwitter.git
+    git_branch: master
+    command: bundle exec rackup -E _env:RACK_ENV
+    
+    
+    build_root: .
+
+    ports:
+      - container: 9292
+        http: 80
+        https: 443
+        
+        
+    
+
+    env_vars:
+      RAILS_ENV: production
+    
+      RACK_ENV: production
+    
+
+
+
+##NEWLINE##
+databases:
+  - 
