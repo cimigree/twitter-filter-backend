@@ -1,14 +1,13 @@
 source "https://rubygems.org"
 
-gem "sinatra"
-gem "sinatra-contrib"
-gem "activerecord"
+gem 'sinatra', '2.0.2'
+gem 'activerecord'
 gem 'rake'
 gem 'sinatra-cross_origin'
 
-gem "twitter"
+gem 'twitter'
 
-gem "dotenv"
+gem 'dotenv'
 
 gem 'puma'
 gem 'rack-conneg'
